@@ -1,4 +1,3 @@
-
 public class randp {
 
 	public randp(int i) {
