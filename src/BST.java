@@ -5,9 +5,9 @@ public class BST<T extends Comparable<T>> {
 	private BST<T> left;
 	private BST<T> right;
 	
-	public BST(T datum)
+	public BST(T start)
 	{
-		
+		datum = start;
 	}
 	
 	public T getDatum()
@@ -32,12 +32,12 @@ public class BST<T extends Comparable<T>> {
 	
 	public String toString()
 	{
-		
+		return "";
 	}
 	
 	public int depth()
 	{
-		
+		return 0;
 	}
 	
 	public void insert(T toinsert)
