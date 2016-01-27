@@ -6,7 +6,8 @@ public class Main {
 		BST t = new BST(5);
 		t.insert(6);
 		t.insert(1);
-		
+		t.insert(1000);
+
 		t.printTree();
 //		System.out.println(t.getRight().getDatum());
 
