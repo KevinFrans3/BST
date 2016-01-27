@@ -5,9 +5,9 @@ public class BST<T extends Comparable<T>> {
 	private BST<T> left;
 	private BST<T> right;
 
-	public BST(T datum)
+	public BST(T tostart)
 	{
-
+		datum = tostart;
 	}
 
 	public T getDatum()
