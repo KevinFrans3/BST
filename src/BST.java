@@ -54,10 +54,32 @@ public class BST<T extends Comparable<T>> {
 	{
 		return "";
 	}
-
+	
 	public int depth()
 	{
-		return 0;
+		return rdepth(1);
+	}
+
+	public int rdepth(int d)
+	{
+		int depthleft = d;
+		int depthright = d;
+		
+		if(right != null)
+		{
+			depthright = right.rdepth(d+1);
+		}
+		
+		
+		if(left != null)
+		{
+			depthleft = left.rdepth(d+1);
+		}
+		
+//		System.out.println(d);
+//		System.out.println(d);
+		
+		return depthleft > depthright ? depthleft : depthright;
 	}
 
 	public void insert(T toinsert)
