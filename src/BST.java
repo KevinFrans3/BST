@@ -37,6 +37,8 @@ public class BST<T extends Comparable<T>> {
 			left.printTree();
 		}
 		
+		System.out.println(datum);
+		
 		if(right == null)
 		{
 			islast = true;
@@ -46,10 +48,6 @@ public class BST<T extends Comparable<T>> {
 			right.printTree();
 		}
 		
-		if(islast)
-		{
-			System.out.println(datum);
-		}
 	}
 
 	public String toString()
