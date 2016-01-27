@@ -24,8 +24,9 @@ public class randp {
 		int toreturn = ints.get(randomindex);
 		ints.remove(randomindex);
 		return toreturn;
-		
-//		return 0;
+	
+	
+
 	}
 
 }
