@@ -27,7 +27,29 @@ public class BST<T extends Comparable<T>> {
 	
 	public void printTree()
 	{
+		boolean islast = false;
+		if(left == null)
+		{
+			islast = true;
+		}
+		else
+		{
+			left.printTree();
+		}
 		
+		if(right == null)
+		{
+			islast = true;
+		}
+		else
+		{
+			right.printTree();
+		}
+		
+		if(islast)
+		{
+			System.out.println(datum);
+		}
 	}
 	
 	public String toString()
