@@ -76,8 +76,6 @@ public class BST<T extends Comparable<T>> {
 			depthleft = left.rdepth(d+1);
 		}
 		
-//		System.out.println(d);
-//		System.out.println(d);
 		
 		return depthleft > depthright ? depthleft : depthright;
 	}
